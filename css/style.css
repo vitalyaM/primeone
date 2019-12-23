@@ -777,15 +777,12 @@ header {
         margin: 0px -20px; } }
     @media (max-width: 767.98px) {
       .contact-block__row {
-        -ms-flex-wrap: no-wrap;
-        flex-wrap: no-wrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: left;
-        -ms-flex-align: left;
-        align-items: left; } }
+        flex-direction: column; } }
   .contact-block__column {
     max-width: 50%;
     -webkit-box-flex: 0;
@@ -913,7 +910,7 @@ header {
     @media (max-width: 892px) {
       .hello-bottom__map {
         width: 100%;
-        height: 8	0vh; } }
+        height: 80vh; } }
   .hello-bottom__google {
     height: 100%; }
     @media (max-width: 892px) {

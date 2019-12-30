@@ -61,7 +61,7 @@ function adaptive_function() {
 	adaptive_header(w,h);
 }
 	adaptive_function();
-function map(n){
+
 	ymaps.ready(init);
 	function init(){ 
 		// Создание карты.
@@ -71,13 +71,13 @@ function map(n){
 			// Чтобы не определять координаты центра карты вручную,
 			// воспользуйтесь инструментом Определение координат.
 			controls: [],
-			center: [43.585525,39.723062],
+			center: [40.742789, -73.926095],
 			// Уровень масштабирования. Допустимые значения:
 			// от 0 (весь мир) до 19.
-			zoom: 10
+			zoom: 15
 		});
 		
-		myPlacemar = new ymaps.Placemark([43.585525,39.723062],{
+		myPlacemar = new ymaps.Placemark([40.742789, -73.926095],{
 			id:'2'
 		},{
 			// Опции.
@@ -88,7 +88,7 @@ function map(n){
 			// Своё изображение иконки метки.
 			iconImageHref: 'img/icons/map.svg',
 			// Размеры метки.
-			iconImageSize: [40, 40],
+			iconImageSize: [27, 41],
 			// Смещение левого верхнего угла иконки относительно
 			// её "ножки" (точки привязки).
 			iconImageOffset: [-20, -20],
@@ -99,7 +99,7 @@ function map(n){
 
 		myMap.behaviors.disable('scrollZoom');
 	}
-}
+
 //FORMS
 function forms(){
 	//SELECT
